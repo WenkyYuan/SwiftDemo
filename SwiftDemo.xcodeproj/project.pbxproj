@@ -16,6 +16,7 @@
 		2634CC8B1BFDD4820051E0D7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2634CC851BFDD4820051E0D7 /* ViewController.xib */; };
 		267C26921C02F88700F2974B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C26901C02F88700F2974B /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		267C26931C02F88700F2974B /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267C26911C02F88700F2974B /* CustomTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		267C26951C030CA200F2974B /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267C26941C030CA200F2974B /* NextViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2634CC851BFDD4820051E0D7 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		267C26901C02F88700F2974B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		267C26911C02F88700F2974B /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		267C26941C030CA200F2974B /* NextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				2634CC841BFDD4820051E0D7 /* ViewController.swift */,
 				2634CC851BFDD4820051E0D7 /* ViewController.xib */,
 				2634CC831BFDD4820051E0D7 /* NextViewController.swift */,
+				267C26941C030CA200F2974B /* NextViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				2634CC8B1BFDD4820051E0D7 /* ViewController.xib in Resources */,
 				267C26931C02F88700F2974B /* CustomTableViewCell.xib in Resources */,
 				2634CC601BFD70DB0051E0D7 /* Images.xcassets in Resources */,
+				267C26951C030CA200F2974B /* NextViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

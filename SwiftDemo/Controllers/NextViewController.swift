@@ -9,9 +9,10 @@
 import UIKit
 
 class NextViewController: UIViewController {
-    
+    @IBOutlet weak var webView: UIWebView!
     var bgColor: UIColor?
-    
+    let url: String = "http://www.baidu.com"
+
     deinit {
         NSLog("dealloc")
     }
@@ -21,12 +22,19 @@ class NextViewController: UIViewController {
         
         title = "Next"
         view.backgroundColor = bgColor==nil ? UIColor.redColor() : bgColor
-        setupNavBar()
+        setupNavBarItem()
+        setupWebView()
     }
     
-    func setupNavBar() {
+    func setupNavBarItem() {
         let item: UIBarButtonItem = UIBarButtonItem(title: "通知", style: UIBarButtonItemStyle.Plain, target: self, action: "didTapBar")
         navigationItem.rightBarButtonItem = item
+    }
+    
+    func setupWebView() {
+        let webUrl: NSURL = NSURL(string: url)!
+        let request: NSURLRequest = NSURLRequest(URL: webUrl)
+        webView.loadRequest(request)
     }
     
     func didTapBar() {

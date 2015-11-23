@@ -13,11 +13,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-Tr-SBr">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Y2M-BS-xhc"/>
@@ -32,6 +32,7 @@
                 <constraint firstItem="2yA-Tr-SBr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gcJ-tZ-CAX"/>
                 <constraint firstAttribute="trailing" secondItem="2yA-Tr-SBr" secondAttribute="trailing" id="ogg-Me-6Ud"/>
             </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
 </document>

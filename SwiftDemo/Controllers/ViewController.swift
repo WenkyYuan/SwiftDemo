@@ -28,7 +28,6 @@ class ViewController: UIViewController, CustomTableViewCellDelegate {
     //MARK: private methods
     func setup() {
         tableView.registerNib(UINib(nibName: kCustomTableViewCell, bundle: nil), forCellReuseIdentifier: kCustomTableViewCell)
-        UIWebView 
     }
     
     func observeNotification() {
@@ -65,7 +64,7 @@ class ViewController: UIViewController, CustomTableViewCellDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView .deselectRowAtIndexPath(indexPath, animated: true)
-        let vc = NextViewController()
+        let vc = NextViewController(nibName: "NextViewController", bundle: nil)
         vc.bgColor = UIColor.purpleColor()
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -10,8 +10,9 @@ import UIKit
 
 class NextViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
-    var bgColor: UIColor?
-    let url: String = "http://www.baidu.com"
+    
+    let url: String = "http://www.baidu.com" //初始化为百度网址字符串，常量
+    var bgColor: UIColor?       //初始化为nil,因为生命周期中，(理想状态)可能为nil所以用?
 
     deinit {
         NSLog("dealloc")
@@ -32,7 +33,7 @@ class NextViewController: UIViewController {
     }
     
     func setupWebView() {
-        let webUrl: NSURL = NSURL(string: url)!
+        let webUrl: NSURL! = NSURL(string: url)
         let request: NSURLRequest = NSURLRequest(URL: webUrl)
         webView.loadRequest(request)
     }

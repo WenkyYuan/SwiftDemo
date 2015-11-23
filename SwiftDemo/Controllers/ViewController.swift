@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, CustomTableViewCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    var tableData = [String]()  //定义一个存放String类型元素的数组，并初始化
     
     let kCustomTableViewCell = "CustomTableViewCell"
     
